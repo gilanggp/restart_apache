@@ -5,7 +5,7 @@
   tasks:
     - name: Transfer bash file to host
       ansible.builtin.copy:
-        src: /home/lily/code/restart_apache.sh
+        src: bash/restart_apache.sh
         dest: /bin/restart_apache.sh
 
     - name: Display the config
