@@ -1,0 +1,15 @@
+---
+- name: Update Bash file Server
+  hosts: server
+  become: yes
+  tasks:
+    - name: Transfer bash file to host
+      ansible.builtin.copy:
+        src: /home/lily/code/restart_apache.sh
+        dest: /bin/restart_apache.sh
+        force: yes
+
+    - name: Display the config
+      ansible.builtin.debug:
+        msg: "Config displayed"
+

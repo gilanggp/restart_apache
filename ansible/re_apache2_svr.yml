@@ -1,0 +1,11 @@
+---
+- name: Restart Apache2 Server
+  hosts: server
+  become: yes
+  tasks:
+     - name: Execute the script
+       command: sh /bin/restart_apache.sh
+       
+     - name: Display the config
+       ansible.builtin.debug:
+         msg: "Config displayed"
