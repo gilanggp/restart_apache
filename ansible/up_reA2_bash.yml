@@ -7,7 +7,7 @@
       ansible.builtin.copy:
         src: /home/lily/code/restart_apache.sh
         dest: /bin/restart_apache.sh
-        force: yes
+        remote_src: yes
 
     - name: Display the config
       ansible.builtin.debug:
