@@ -1,3 +1,0 @@
-[server]
-lily ansible_host=10.0.35.15 ansible_user=lily ansible_password=kag2016	ansible_sudo_password=kag2016
-web-hotel ansible_host=10.0.35.36 ansible_user=kusuma ansible_password=peRkasa$% ansible_sudo_password=peRkasa$
